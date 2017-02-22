@@ -1,0 +1,38 @@
+/* AUTHOR: Junhui Xie
+    CREATED: 2015-03-07
+    UPDATED: 2015-03-15 */
+
+body {
+    background-color: #99FFCC;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 28px;
+}
+
+h3 {
+    text-align: center; 
+    font-family: "Arial";
+}
+
+.formInfo {
+    text-align: right;
+    font-family: "Arial";
+}
+
+.tableInfo {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Arial";
+}
+
+.buttonInfo {
+    text-align: center;
+}
+
+#title {
+    background-color: #3399FF;
+    color: white;
+}

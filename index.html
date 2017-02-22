@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- AUTHOR: Junhui Xie
+    CREATED: 2015-03-07
+    UPDATED: 2015-03-15 -->
+
+<html>
+    <head>
+        <title>Assignment 2_Junhui Xie</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Junhui Xie">
+        <meta name="description" content="Assignment 2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="js/validation.js"></script>
+    </head>
+    <body>
+        <h1>Sheridan Delivery Services</h1>
+        <div>
+            <h3>Enter Billing Information</h3>
+            <form name="billing">
+                <table class="tableInfo">
+                    <tr>
+                        <td class="formInfo">Credit Card Number:</td>
+                        <td><input type="text" name="number" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Card Type:</td>
+                        <td>
+                            <select name="cardType">
+                                <option>VISA</option>
+                                <option>MASTERCARD</option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Card Expiry:</td>
+                        <td><input type="month" name="expiryMonth"></td>
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Cardholder Name:</td>
+                        <td><input type="text" name="cardholderName" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Address:</td>
+                        <td><input type="text" name="billAddress" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">City:</td>
+                        <td><input type="text" name="billCity" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Province:</td>
+                        <td>
+                            <select name="billProvince">
+                                <option>ON</option>
+                                <option>QC</option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Postal Code:</td>
+                        <td><input type="text" name="billPostalCode" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="buttonInfo" colspan="2">
+                            <input type="button" value="Validate Billing Info"
+                                   name="validateButton"/>
+                        </td>
+                    </tr>
+                </table>  
+            </form>
+        </div>
+        <div>
+            <h3>Enter Shipping Information</h3>
+            <form name="shipping">
+                <table class="tableInfo">
+                    <tr>
+                        <td class="buttonInfo" colspan="2">
+                            <input type="button" value="Same as Billing"
+                                   name="copyButton"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Ship To:</td>
+                        <td><input type="text" id="shipName" name="shipInfo" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Address:</td>
+                        <td><input type="text" id="shipAddr" name="shipAddress" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">City:</td>
+                        <td><input type="text" id="shipCty" name="shipCity" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Province:</td>
+                        <td>
+                            <select id="shipPro" name="shipProvince">
+                                <option>ON</option>
+                                <option>QC</option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Postal Code:</td>
+                        <td><input type="text" id="shipPost" name="shipPostalCode" /></td> 
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <h3>Enter Delivery Information</h3>
+            <form name="delivery">
+                <table class="tableInfo">
+                    <tr>
+                        <td class="formInfo">Enter package weight(in lbs.):</td>
+                        <td><input type="text" name="weight" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="formInfo">Shipping Method:</td>
+                        <td>
+                            <input type="radio" name="method" value="Next Day"
+                                   checked /> Next Day
+                            <input type="radio" name="method" value="Express" />
+                            Express
+                            <input type="radio" name="method" value="Ground" />
+                            Ground
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="buttonInfo" colspan="2">
+                            <input type="button" value="Calculate Cost"
+                                   name="calculateButton"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="title">
+            <h1>Delivery Details:</h1>
+                <h3 id="details"></h3>
+        </div>
+    </body>
+</html>
